@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Late</string>
+    <string name="username_hint">Identifiant Aurion</string>
+    <string name="password_hint">Mot de passe Aurion</string>
+    <string name="login_button">Connexion</string>
+    <string name="appActivation">Désactiver les notifications </string>
+    <string name="buttonDeleteAll">Supression de toutes les données</string>
+    <string name="buttonSendNotification">Envoyer la notification du jour</string>
+</resources>

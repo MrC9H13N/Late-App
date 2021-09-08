@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/glacier"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/glacier"
+        tools:context=".Settings">
+
+        <Switch
+            android:id="@+id/switchActivation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:theme="@style/SwitchTheme"
+            android:text="@string/appActivation"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserInfo" />
+
+        <Button
+            android:id="@+id/buttonDeleteAll"
+            android:layout_width="326dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/red_dark"
+            android:text="@string/buttonDeleteAll"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSendNotification" />
+
+        <Button
+            android:id="@+id/buttonSendNotification"
+            android:layout_width="326dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="@color/glacier_dark"
+            android:text="@string/buttonSendNotification"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchActivation" />
+
+        <TextView
+            android:id="@+id/textViewUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/glacier"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/glacier"
+        tools:context=".Login">
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/glacier_dark"
+            android:ems="10"
+            android:hint="@string/username_hint"
+            android:inputType="textPersonName"
+            android:textColor="@color/glacier_dark"
+            android:textColorHint="@color/glacier_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/glacier_dark"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textColor="@color/glacier_dark"
+            android:textColorHint="@color/glacier_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="158dp"
+            android:layout_height="158dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/countdown" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="311dp"
+            android:layout_height="161dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/holligate"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="90sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonConnect"
+            android:layout_width="153dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/glacier_dark"
+            android:text="@string/login_button"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonConnect" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
